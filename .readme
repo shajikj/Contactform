@@ -1,0 +1,88 @@
+# Real Estate Landing Page - PHP Project
+
+## 1. Project Overview
+This project is a responsive Real Estate Landing Page developed using:
+- PHP
+- HTML
+- CSS
+- (Optional) MySQL for saving contact form leads
+
+The landing page includes:
+- Hero section with background banner and CTA button
+- Property highlights (minimum 3 features using icons)
+- Gallery section with at least 4 images
+- Contact form with:
+  - Name
+  - Email
+  - Phone
+  - Property Type (dropdown)
+  - Checkbox (“I want a site visit”)
+- Form validation on submission
+- Success or error message displayed on the same page
+- (Optional) Saving leads to a MySQL database
+- (Optional) A separate page (submitted-leads.php) to list saved leads
+
+------------------------------------------------------------
+
+## 2. Folder Structure
+
+project/
+│── index.php  
+│── css/style.css  
+│── images/ (contains all gallery and banner images)  
+│── leads.php (optional – used only if form data is saved in DB)  
+│── submitted-leads.php (optional – list of saved leads)  
+│── database.sql (optional – export of MySQL database)
+
+------------------------------------------------------------
+
+## 3. Local Setup Instructions
+
+### Step 1: Copy Project Folder
+1. Extract the ZIP file provided.
+2. Move the entire project folder into your local server directory:
+   - WAMP → www/
+
+Example path:  
+C:/xampp/htdocs/realestate/
+
+------------------------------------------------------------
+
+## 4. Run the Project
+
+Open your browser and go to:
+
+http://localhost/realestate/  
+(Replace “realestate” with your actual folder name.)
+
+------------------------------------------------------------
+
+## 5. Database Setup (ONLY if MySQL is used)
+
+This step is optional. If your version includes database integration:
+
+### Step 1: Create Database
+1. Open phpMyAdmin: http://localhost/phpmyadmin
+2. Click “New”
+3. Create a database named: **realestate_db**  
+   (or any name you prefer)
+
+### Step 2: Import the SQL File
+1. Select the database
+2. Click “Import”
+3. Choose **database.sql**
+4. Click “Go”
+
+------------------------------------------------------------
+
+## 6. Update Database Credentials (If applicable)
+
+If your project saves form leads into the database, update the credentials in the correct file:
+
+### If the form is processed in `index.php`  
+Update inside `index.php`.
+
+### If the form is processed in `leads.php`  
+Update inside `leads.php`.
+
+
