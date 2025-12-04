@@ -11,7 +11,8 @@ if (isset($_POST['submit'])) {
     $insert_data = mysqli_query(
         $conn,
         "INSERT INTO contactform (name, email, phone, property_type, site_visit) 
-        VALUES ('$name','$email','$phone','$property_type','$checkbox')");
+        VALUES ('$name','$email','$phone','$property_type','$checkbox')"
+    );
     if ($insert_data) {
         header("Location: success.php");
         exit;
@@ -56,19 +57,16 @@ if (isset($_POST['submit'])) {
                             <input type="text" name="name" class="form-control" placeholder="Enter your full name"
                                 required>
                         </div>
-
                         <div class="mb-3">
                             <label class="form-label">Email *</label>
                             <input type="email" name="email" class="form-control" placeholder="Enter your email"
                                 required>
                         </div>
-
                         <div class="mb-3">
                             <label class="form-label">Phone Number *</label>
                             <input type="tel" name="phone" class="form-control" placeholder="Enter phone number"
                                 required maxlength="10" minlength="10">
                         </div>
-
                         <div class="mb-3">
                             <label class="form-label">Property Type *</label>
                             <select name="property_type" class="form-select" required>
@@ -79,7 +77,6 @@ if (isset($_POST['submit'])) {
                                 <option value="Villa">Villa</option>
                             </select>
                         </div>
-
                         <div class="form-check mb-3">
                             <input type="checkbox" name="site_visit" class="form-check-input" id="visit">
                             <label class="form-check-label" for="visit">
