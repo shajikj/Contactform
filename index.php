@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
                         </div>
 
                         <div class="form-check mb-3">
-                            <input type="checkbox" name="site_visit" class="form-check-input" id="visit" required>
+                            <input type="checkbox" name="site_visit" class="form-check-input" id="visit">
                             <label class="form-check-label" for="visit">
                                 I want a site visit
                             </label>
